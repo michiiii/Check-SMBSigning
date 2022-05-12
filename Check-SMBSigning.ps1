@@ -1044,7 +1044,7 @@ if($client.Connected -or (!$startup_error -and $inveigh.session_socket_table[$se
 
                             if($signing_check)
                             {
-                                Write-Output "[+] SMB signing is not required on $target"
+                                Write-Host "[+] SMB signing is not required on $target" -ForegroundColor Black -BackgroundColor Red
                                 $stage = 'Exit'
                             }
                             else
